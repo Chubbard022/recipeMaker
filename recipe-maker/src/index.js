@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import thunk from 'redux-thunk';
+
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
