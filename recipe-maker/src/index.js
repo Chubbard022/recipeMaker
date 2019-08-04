@@ -5,6 +5,9 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+import reducer from "../src/reducers/index"
+import tokenizer from "tokenizer"
 
 
 const store = createStore(reducer, applyMiddleware(tokenizer, thunk));
@@ -21,3 +24,4 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
