@@ -3,6 +3,7 @@
 
 
 const initialState = {
+    hello: true
 }
 
 export default (state = initialState, action) => {
