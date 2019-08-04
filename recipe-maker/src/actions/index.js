@@ -1,3 +1,5 @@
+import auth from "../utilities/index"
+
 export const 
     LOGIN = "LOGIN",
     REGISTER = 'REGISTER'
