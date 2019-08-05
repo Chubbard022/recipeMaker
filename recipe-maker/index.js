@@ -1,6 +1,6 @@
 require("dotenv").config() //load .env variables
 
-const server = require("./api/server")
+const server = require("../recipe-maker/api/server")
 
 const port = process.env.PORT || 3300;
 
