@@ -16,34 +16,34 @@ module.exports = {
       }
     },
     migrations:{
-      directory:"./data/migrations"
+      directory:"../recipe-maker/data/migrations"
     },
     seeds:{
-      directory:"./data/seeds"
+      directory:"../recipe-maker/data/seeds"
     }
   },
   testing:{
     client: "sqlite3",
     connection:{
       filename:
-        "./data/test.sqlite3"
+        "../recipe-maker/data/test.sqlite3"
     },
       useNullAsDefault: true,
       migrations:{
-        directory:"./data/migrations"
+        directory:"../recipe-maker/data/migrations"
       },
       seeds:{
-        directory:"./data/seeds"
+        directory:"../recipe-maker/data/seeds"
     }
   },
   production:{
     client: "pg",
     connection: process.env.DATABASE_URL,
       migrations:{
-        directory:"./data/migrations"
+        directory:"../recipe-maker/data/migrations"
       },
       seeds:{
-        directory:"./data/seeds"
+        directory:"../recipe-maker/data/ seeds"
     }
   }
 };
